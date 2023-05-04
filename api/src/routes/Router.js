@@ -73,23 +73,6 @@ dogsRouter.post("/", async (req, res) => {
   }
 });
 
-//PUT
-
-// dogsRouter.put("/:id", async (req, res) => {
-//   const { image, name, height, weight, lifespan } = req.body;
-//   const { id } = req.params;
-//   try {
-//     if (!image || !name || !height || !weight || !lifespan)
-//       throw Error("Falta informacion");
-//     else {
-//       const dog = await putDog(id, image, name, height, weight, lifespan);
-//       res.status(200).json(dog);
-//     }
-//   } catch (error) {
-//     res.status(404).send(error.message);
-//   }
-// });
-
 //DELETE
 
 dogsRouter.delete("/:id", async (req, res) => {
